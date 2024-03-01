@@ -1,0 +1,310 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "gestorOpiniones",
+    "dateExported": "2024-03-01T17:37:09.531Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "56c088e3-0f46-483b-b700-ae51001b89ca",
+            "name": "users",
+            "containerId": "",
+            "created": "2024-03-01T13:52:52.844Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "481d9e1d-1ec5-4ac9-a31b-19a2ccf31a21",
+            "name": "posts",
+            "containerId": "",
+            "created": "2024-03-01T17:07:01.834Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "2803900b-8691-4da0-a9c5-ad1791f2b437",
+            "name": "comments",
+            "containerId": "",
+            "created": "2024-03-01T17:22:17.809Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "2102c74e-78b9-428b-b517-40b1c7ca398e",
+            "colId": "aa5cf971-163f-4283-a578-56745aebc1b1",
+            "containerId": "56c088e3-0f46-483b-b700-ae51001b89ca",
+            "name": "register",
+            "url": "localhost:3056/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T13:53:03.078Z",
+            "modified": "2024-03-01T14:18:35.740Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "bvalladares"
+                    },
+                    {
+                        "name": "email",
+                        "value": "bvalladares@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e33f0c6b-6c2c-4a94-9bbb-dd08f05f852a",
+            "colId": "aa5cf971-163f-4283-a578-56745aebc1b1",
+            "containerId": "56c088e3-0f46-483b-b700-ae51001b89ca",
+            "name": "login",
+            "url": "localhost:3056/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T15:00:38.126Z",
+            "modified": "2024-03-01T16:53:23.355Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "bvalladares"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8f535992-1177-4da6-b33b-8c5a18188d51",
+            "colId": "aa5cf971-163f-4283-a578-56745aebc1b1",
+            "containerId": "56c088e3-0f46-483b-b700-ae51001b89ca",
+            "name": "edit",
+            "url": "localhost:3056/editProfile/65e1e4958c339ca1ff1b49c4",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-01T16:57:00.594Z",
+            "modified": "2024-03-01T17:03:57.638Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZTQ5NThjMzM5Y2ExZmYxYjQ5YzQiLCJ1c2VybmFtZSI6ImJ2YWxsYWRhcmVzIiwiZW1haWwiOiJidmFsbGFkYXJlc0BnbWFpbC5jb20iLCJpYXQiOjE3MDkzMTIwMDMsImV4cCI6MTcwOTMyMjgwM30.SfFI3cFAJrQ1v8iEx_i4toPZtDNdwu06c7k5ANtw3X4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "bvalladares1"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "833832d2-01d1-4787-b677-2c1917910e67",
+            "colId": "aa5cf971-163f-4283-a578-56745aebc1b1",
+            "containerId": "481d9e1d-1ec5-4ac9-a31b-19a2ccf31a21",
+            "name": "create",
+            "url": "localhost:3056/post/createP",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-01T17:07:25.002Z",
+            "modified": "2024-03-01T17:16:06.150Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZTQ5NThjMzM5Y2ExZmYxYjQ5YzQiLCJ1c2VybmFtZSI6ImJ2YWxsYWRhcmVzIiwiZW1haWwiOiJidmFsbGFkYXJlc0BnbWFpbC5jb20iLCJpYXQiOjE3MDkzMTIwMDMsImV4cCI6MTcwOTMyMjgwM30.SfFI3cFAJrQ1v8iEx_i4toPZtDNdwu06c7k5ANtw3X4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Fortnite"
+                    },
+                    {
+                        "name": "category",
+                        "value": "games"
+                    },
+                    {
+                        "name": "content",
+                        "value": "La nueva actualizacion de fortnite llego "
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e1e4958c339ca1ff1b49c4",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3dad140a-43ac-42d6-9892-e8a6f19ce299",
+            "colId": "aa5cf971-163f-4283-a578-56745aebc1b1",
+            "containerId": "481d9e1d-1ec5-4ac9-a31b-19a2ccf31a21",
+            "name": "edit",
+            "url": "localhost:3056/post/editP/65e20cb72bd3a37476955441",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-01T17:14:19.026Z",
+            "modified": "2024-03-01T17:20:10.844Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZTQ5NThjMzM5Y2ExZmYxYjQ5YzQiLCJ1c2VybmFtZSI6ImJ2YWxsYWRhcmVzIiwiZW1haWwiOiJidmFsbGFkYXJlc0BnbWFpbC5jb20iLCJpYXQiOjE3MDkzMTIwMDMsImV4cCI6MTcwOTMyMjgwM30.SfFI3cFAJrQ1v8iEx_i4toPZtDNdwu06c7k5ANtw3X4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "En España"
+                    },
+                    {
+                        "name": "category",
+                        "value": "travels"
+                    },
+                    {
+                        "name": "content",
+                        "value": "Un viaje aburrido pero conociendo nuevos lugares"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "07d0976c-420f-48b9-a29c-20f1c7af9dc4",
+            "colId": "aa5cf971-163f-4283-a578-56745aebc1b1",
+            "containerId": "481d9e1d-1ec5-4ac9-a31b-19a2ccf31a21",
+            "name": "delete",
+            "url": "localhost:3056/post/deleteP/65e20cb72bd3a37476955441",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-01T17:20:34.458Z",
+            "modified": "2024-03-01T17:21:35.869Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZTQ5NThjMzM5Y2ExZmYxYjQ5YzQiLCJ1c2VybmFtZSI6ImJ2YWxsYWRhcmVzIiwiZW1haWwiOiJidmFsbGFkYXJlc0BnbWFpbC5jb20iLCJpYXQiOjE3MDkzMTIwMDMsImV4cCI6MTcwOTMyMjgwM30.SfFI3cFAJrQ1v8iEx_i4toPZtDNdwu06c7k5ANtw3X4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3b9f2841-8845-497e-b998-8c492b20a56e",
+            "colId": "aa5cf971-163f-4283-a578-56745aebc1b1",
+            "containerId": "2803900b-8691-4da0-a9c5-ad1791f2b437",
+            "name": "create",
+            "url": "localhost:3056/comment/createC",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-01T17:22:45.759Z",
+            "modified": "2024-03-01T17:25:23.181Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZTQ5NThjMzM5Y2ExZmYxYjQ5YzQiLCJ1c2VybmFtZSI6ImJ2YWxsYWRhcmVzIiwiZW1haWwiOiJidmFsbGFkYXJlc0BnbWFpbC5jb20iLCJpYXQiOjE3MDkzMTIwMDMsImV4cCI6MTcwOTMyMjgwM30.SfFI3cFAJrQ1v8iEx_i4toPZtDNdwu06c7k5ANtw3X4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Esta chida la actualizacion"
+                    },
+                    {
+                        "name": "post",
+                        "value": "65e20d5691fc1cc255e377ea"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9dd407c0-938e-4653-a9f1-6aa250a9bb4b",
+            "colId": "aa5cf971-163f-4283-a578-56745aebc1b1",
+            "containerId": "2803900b-8691-4da0-a9c5-ad1791f2b437",
+            "name": "edit",
+            "url": "localhost:3056/comment/editC/65e20f834e9418c0e11e8992",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-01T17:25:41.333Z",
+            "modified": "2024-03-01T17:28:52.014Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZTQ5NThjMzM5Y2ExZmYxYjQ5YzQiLCJ1c2VybmFtZSI6ImJ2YWxsYWRhcmVzIiwiZW1haWwiOiJidmFsbGFkYXJlc0BnbWFpbC5jb20iLCJpYXQiOjE3MDkzMTIwMDMsImV4cCI6MTcwOTMyMjgwM30.SfFI3cFAJrQ1v8iEx_i4toPZtDNdwu06c7k5ANtw3X4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "No me gusto la actualizacion"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7a985a4e-c8e0-4f0b-8415-de72883e4738",
+            "colId": "aa5cf971-163f-4283-a578-56745aebc1b1",
+            "containerId": "2803900b-8691-4da0-a9c5-ad1791f2b437",
+            "name": "delete",
+            "url": "localhost:3056/comment/deleteC/65e20f834e9418c0e11e8992",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-01T17:29:16.673Z",
+            "modified": "2024-03-01T17:30:33.389Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZTQ5NThjMzM5Y2ExZmYxYjQ5YzQiLCJ1c2VybmFtZSI6ImJ2YWxsYWRhcmVzIiwiZW1haWwiOiJidmFsbGFkYXJlc0BnbWFpbC5jb20iLCJpYXQiOjE3MDkzMTIwMDMsImV4cCI6MTcwOTMyMjgwM30.SfFI3cFAJrQ1v8iEx_i4toPZtDNdwu06c7k5ANtw3X4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
